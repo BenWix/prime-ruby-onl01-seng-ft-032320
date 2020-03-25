@@ -1,6 +1,6 @@
 # Add  code here!
 def prime?(int)
-  int = abs(int)
+ int = int * -1 if int < 0 
   return true if int == 2 
   return false if int.even?
   range = *(3..int/2).reject{|i| i.even?}
